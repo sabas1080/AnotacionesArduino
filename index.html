@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>ESP8266 el Internet de Las cosas a bajo Costo</title>
+		<title>Certificación Arduino</title>
 
 		<meta name="description" content="Una introduccion al IoT">
 		<meta name="author" content="sabas">
@@ -41,12 +41,12 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>ESP8266</h1>
-					<h3>DIY el Internet de las Cosas</h3>
+					<img width="341" height="250" data-src="img/arduino-UNO.png">
+					<h1>Certificación Arduino</h1>
+					<h3>Diciembre 2015</h3>
 					<p>
-						<small>Created by <a href="http://theinventorhouse.org">Andres Sabas</a> / <a href="http://twitter.com/sabasacustico">@sabasacustico</a></small>
+						<small>Instructor <a href="http://theinventorhouse.org">Andres Sabas</a> / <a href="http://twitter.com/sabasacustico">@sabasacustico</a></small>
 					</p>
-					<p><small>y gatos ingenieros</small></p>
 				</section>
 
 				<section>
@@ -54,611 +54,91 @@
 				</section>
 
 				<section>
-					<h2>ESP8266</h2>
+					<h2>¿Qué es Arduino?</h2>
 					<p>
-						Modulo Tranceptor Wifi Serie SoC.
+						Es una plataforma de electrónica abierta para la creación de prototipos basada en software
+						y hardware flexibles y fáciles de usar. Creada para artistas, diseñadores, aficionados y
+						cualquier interesado en crear entornos u objetos interactivos.
 					</p>
-					<img width="341" height="378" data-src="img/ESP8266EX.png">
 				</section>
 
 				<section>
-					<h2>Caracteristicas Principales</h2>
+					<h2>Diferentes versiones de Arduino</h2>
 					<p>
-						- It's a wireless SoC <br>
-						-It has GPIO, I2C, ADC, SPI, PWM and some more <br>
-						-It's running at 80MHz <br>
-						-64KBytes of instruction RAM <br>
-						-96KBytes of data RAM <br>
-						-64KBytes boot ROM <br>
-						-It's a RISC architecture <br>
-						-The ESP8266 chip is made by Espressif <br>
+						-Uno, Duemilanove, Diecimila, Nano, Mega, LilyPad, Fio, Mini,ProMini conformados por un micro de Atmel de la serie Atmega.<br>
+						-DUE, Zero conformados por ARM<br>
+						-Yun, Intel Edison, Intel Galileo, Arduino Curie<br>
 					</p>
 				</section>
 
 				<section>
 					<h2>Caracteristicas Principales</h2>
 					<p>
-						-802.11 b/g/n protocol <br>
-						-Wi-Fi 2.4 GHz, support WPA/WPA2 <br>
-						-Super small module size (11.5mm x 11.5mm) <br>
-						-Integrated 10-bit ADC <br>
-						-Integrated TCP/IP protocol stack (ipv4 only at the moment) <br>
-						- +20dBm output power in 802.11b mode <br>
-						-Deep sleep power <br>
-						-Integrated low power 32-bit MCU <br>
-						- SDIO 2.0, SPI, UART, I2C <br>
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Modelos</h2>
-						<p>Diferentes modelos.</p>
-						<p>ESP-01 Version 2.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="341" height="378" data-src="img/module_v2.png" alt="Down arrow">
-						</a>
-					</section>
-
-					<section>
-					<img width="641" height="450" data-src="img/zener.jpg">
-					</section>
-
-					<section>
-						<h2>ESP-03</h2>
-						<p>Mas GPIO Disponibles.</p>
-						<img width="341" height="378" data-src="img/esp-03.jpg" alt="Down arrow">
-					</section>
-					<section>
-						<h2>ESP-12</h2>
-						<p>Con Certificacion FCC.</p>
-						<br>
-						<a href="#/2">
-							<img width="348" height="378" data-src="img/esp-12.jpg" alt="Up arrow">
-						</a>
-					</section>
-					<section>
-						<h2>HUZZAH ESP8266</h2>
-						<p>Por Adafruit</p>
-						<br>
-						<a href="#/2">
-							<img width="348" height="378" data-src="img/huzzah.jpg" alt="Up arrow">
-						</a>
-					</section>
-
-					<section>
-							<img width="600" height="450" data-src="img/Logomakerlab.png" alt="Up arrow">
-					</section>
-
-					<section>
-						<h2>ESPino</h2>
-						<p>by MakerLab</p>
-							<img width="300" height="350" data-src="img/ESPinologo.png">
-							<img width="348" height="378" data-src="img/ESPinoRL.jpg" alt="Up arrow">
-					</section>
-				</section>
-
-				<section>
-					<h2>Pinout</h2>
-					<p>
-						¿Como se conecta?
-					</p>
-					<img width="641" height="500" data-src="img/Pinout.png">
-				</section>
-
-				<section>
-					<h2>Comandos AT</h2>
-					<p>
-						Comandos predefinidos con los que podemos controlar el modulo via serial.
-					</p>
-					<img width="641" height="450" data-src="img/at_0.9.1_1.png">
-				</section>
-
-				<section>
-					<h2>Comandos AT</h2>
-					<img width="641" height="450" data-src="img/at_0.9.1_2.png">
-				</section>
-
-				<section>
-					<h2>Firmware</h2>
-					<p>
-						AT: Comandos predefinidos con los que podemos controlar el modulo via serial.
-					</p>
-					<p>
-						Compilado: SDK
-					</p>
-					<p>
-						Otros: IDE de Arduino, MicroPython, LUA, Frankensteinn y otros
-					</p>
-
-				</section>
-
-				<section>
-					<img width="641" height="450" data-src="img/admiral.jpg">
-				</section>
-
-				<section>
-					<h2>Hardware</h2>
-					<p>
-						ESP8266.
-					</p>
-					<p>
-						Convertidor USB-Serial FTDI
-					</p>
-					<p>
-						Arduino
-					</p>
-					<p>
-						 Fuente de 3.3v
+						-ATMEGA328<br>
+						-14 pines entradas/salidas digitales y 6 extras <br>
+						-6 pines PWM<br>
+						-6 pines entradas analogicas <br>
+						-32Kb de memoria <a href="https://es.wikipedia.org/wiki/Memoria_flash">FLASH</a> <br>
+						-1Kb Memoria <a href="https://es.wikipedia.org/wiki/EEPROM">EEPROM</a> <br>
+						-2Kb <a href="https://es.wikipedia.org/wiki/SRAM">SRAM</a> <br>
+						-Velocidad 16 Mhz <br>
+						-Voltaje Operacion 5V (PRECAUCION!!) <br>
 					</p>
 				</section>
 
 				<section>
-					<h2>GPI0 ESPino</h2>
-					<img width="261" height="450" data-src="img/ESPino.png" >
-					<p>
-						<small>Documento GPIO's <a href="file:///home/electronica/Descargas/ESPino-Pinout-ES.pdf">ESPino</a></small>
-					</p>
+					<h2>Gran variedad de Arduinos</h2>
+					<a href="https://www.arduino.cc/">Arduino.cc</a>
 				</section>
 
 				<section>
-					<h2>Subir firmware</h2>
-					<img width="641" height="450" data-src="img/Uploadingesp8266.png">
+					<h2>Veamos un Mapa</h2>
+					<a href="http://ardumap.everpi.net/">Ardu Map</a>
 				</section>
 
 				<section>
-					<h2>Herramientas en Windows</h2>
-					<img width="641" height="450" data-src="img/ESPFLASh.png">
+					<h2>Entrada Digital</h2>
+					<a href="http://ardumap.everpi.net/">Ardu Map</a>
 				</section>
 
 				<section>
-					<h2>Herramientas en Linux y Mac</h2>
-					<pre><code data-trim contenteditable>
-./esptool.py --port /dev/ttyUSB0 write_flash 0x00000 eagle.app.v6.flash.bin 0x40000 eagle.app.v6.irom0text.bin
-					</code></pre>
+					<h2>Salida Digital</h2>
+					<a href="http://ardumap.everpi.net/">Ardu Map</a>
 				</section>
 
 				<section>
-					<img width="641" height="450" data-src="img/cody.jpg">
+					<h2>Pullup y PullDown</h2>
+					<img width="341" height="250" data-src="https://upload.wikimedia.org/wikipedia/commons/5/58/Pullup_Pulldown_resistor.svg"> <br>
+					<a href="https://learn.sparkfun.com/tutorials/pull-up-resistor">Informacion Extra</a>
 				</section>
 
 				<section>
-					<h2>Arduino Codigo</h2>
-					<pre><code data-trim contenteditable>
-/*
-*Andres Sabas
-*Sketch para comprobar funcionamiento del ESP8266
-*Firmware: 0.9.2
-*Fecha: 14 de Marzo del 2015
-*/
-#include <SoftwareSerial.h>
-#define SSID "XXXXXXXXXXX"
-#define PASS "XXXXXX"
-#define DST_IP "220.181.111.85"
-
-   SoftwareSerial dbgSerial(10, 11); // RX, TX
-   void setup()
-   {
-     // Open serial communications and wait for port to open:
-     Serial.begin(9600);
-     //Serial.setTimeout(5000);
-     dbgSerial.begin(9600); //can't be faster than 19200 for softserial
-     dbgSerial.println("ESP8266 Demo");
-     //test if the module is ready
-     Serial.println("AT+RST");
-     delay(1000);
-     if(Serial.find("OK"))
-     {
-       dbgSerial.println("Module is ready");
-     }
-     else
-     {
-       dbgSerial.println("Module have no response.");
-       while(1);
-     }
-     delay(1000);
-     //connect to the wifi
-     boolean connected=false;
-     for(int i=0;i<5;i++)
-     {
-       if(connectWiFi())
-       {
-         connected = true;
-         break;
-       }
-     }
-     if (!connected){while(1);}
-     delay(5000);
-     //print the ip addr
-     /*Serial.println("AT+CIFSR");
-     dbgSerial.println("ip address:");
-     while (Serial.available())
-     dbgSerial.write(Serial.read());*/
-     //set the single connection mode
-     Serial.println("AT+CIPMUX=0");
-   }
-   void loop()
-   {
-     String cmd = "AT+CIPSTART=\"TCP\",\"";
-     cmd += DST_IP;
-     cmd += "\",80";
-     Serial.println(cmd);
-     dbgSerial.println(cmd);
-     if(Serial.find("Error")) return;
-     cmd = "GET / HTTP/1.0\r\n\r\n";
-     Serial.print("AT+CIPSEND=");
-     Serial.println(cmd.length());
-     if(Serial.find(">"))
-     {
-       dbgSerial.print(">");
-       }else
-       {
-         Serial.println("AT+CIPCLOSE");
-         dbgSerial.println("connect timeout");
-         delay(1000);
-         return;
-       }
-       Serial.print(cmd);
-       delay(2000);
-       //Serial.find("+IPD");
-       while (Serial.available())
-       {
-         char c = Serial.read();
-         dbgSerial.write(c);
-         if(c=='\r') dbgSerial.print('\n');
-       }
-       dbgSerial.println("====");
-       delay(1000);
-     }
-     boolean connectWiFi()
-     {
-       Serial.println("AT+CWMODE=1");
-       String cmd="AT+CWJAP=\"";
-       cmd+=SSID;
-       cmd+="\",\"";
-       cmd+=PASS;
-       cmd+="\"";
-       dbgSerial.println(cmd);
-       Serial.println(cmd);
-       delay(5000);
-       if(Serial.find("OK"))
-       {
-         dbgSerial.println("OK, Connected to WiFi.");
-         return true;
-         }else
-         {
-           dbgSerial.println("Can not connect to the WiFi.");
-           return false;
-         }
-       }
-					</code></pre>
-					<p>Codigo en github <a href="https://github.com/sabas1080/ESP8266/blob/master/ESP8266_demo/ESP8266_demo.ino">Sabas1080</a>.</p>
+					<h2>Entradas Analogicas</h2>
+					<h3>ADC: Analog Digital Converter, 10Bits</h3>
+					<p>Convertimos el mundo analogico a Digital</p>
+					<a href="https://learn.sparkfun.com/tutorials/analog-to-digital-conversion">Informacion Extra</a>
 				</section>
 
 				<section>
-					<h2>Compilar tu propio Firmware</h2>
-					<img width="641" height="450" data-src="img/Toolchain.png">
-					<p> Toolchain <a href="https://github.com/sabas1080/ESP8266/blob/master/ESP8266_demo/ESP8266_demo.ino">ESP8266 Wiki</a>.</p>
+					<h2>PWM</h2>
+					<h3>Pulse Width Modulation, 8 Bits</h3>
+					<p>Modulacion por Ancho de Pulso</p>
+					<a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">Informacion Extra</a>
 				</section>
 
 				<section>
-					<h2>LUA</h2>
-					<img width="641" height="250" data-src="img/NodeMCUfirm.png">
-					<img width="641" height="250" data-src="img/NodeMCUfirm2.png">
-				</section>
-
-				<section>
-					<h2>ESPlorer</h2>
-					<img width="641" height="450" data-src="img/ESPlorer-panels.png">
-				</section>
-
-				<section>
-					<h2>GPI0 Map</h2>
-					<img width="641" height="550" data-src="img/gpio_map_lua.png">
-				</section>
-
-				<section>
-					<img width="441" height="550" data-src="img/mocha.jpg">
-				</section>
-
-				<section>
-					<h2>Codigo ejemplo LUA </h2>
-					<pre><code data-trim contenteditable>
-
--- Use the code as needed. Bits and pieces snarfed
-
--- from various online sources.
-
--- Find an open AP and turn on GPIO 2
-
--- To see debug or any output to the com port set debug
-
--- equal to 1. Otherwise leave set to 0.
-
-debug=0
-gpio.mode(3,gpio.OUTPUT)
-gpio.mode(4,gpio.OUTPUT)
-
-gpio.write(3,gpio.LOW)
-gpio.write(4,gpio.LOW)
-
-function network_open()
-
-gpio.write(pin,gpio.HIGH)
-
-tmr.delay(1000)
-
---gpio.write(pin,gpio.LOW)
-
-tmr.delay(1000)
-
-gpio.write(pin,gpio.HIGH)
-
-tmr.delay(1000)
-
---gpio.write(pin,gpio.LOW)
-
-tmr.delay(1000)
-
-gpio.write(pin,gpio.HIGH)
-
-tmr.delay(1000)
-
---gpio.write(pin,gpio.LOW)
-
-tmr.delay(1000)
-
-if debug==1 then print("gpio 0 on") end
-
-end
-
-function network_close()
-
---gpio.write(pin,gpio.HIGH)
-
---tmr.delay(1000)
-
-gpio.write(pin,gpio.LOW)
-
---tmr.delay(1000)
-
-if debug==1 then print("gpio 2 on") end
-
-end
-
-function network_not()
-
-pin=4
-
-gpio.mode(pin,gpio.OUTPUT)
-
-gpio.write(pin,gpio.LOW)
-
-if debug==1 then print("gpio 0 off") end
-
-end
-
-function checkap()
-
--- no ap found
-
-ap=0
-
-function listap(t)
-
-for k,v in pairs(t) do
-
---print(k.." : "..v)
-
---print(v)
-
-a=string.sub (v, 0 , 1 )
-
-print(a)
-
-if debug==1 then print(a) end
-
-if a=="0" or a=="1" then
-
-print("Found open node" , k)
-
--- found at least one open Ap..
-
-network_open()
-
-else
-
-print ("No open nodes found")
-
-network_close()
-
-end
-
-end
-
-end
-
-wifi.sta.getap(listap)
-
-end
-
--- send data every X ms to thing speak
-
-tmr.alarm(0, 10000, 1, function() checkap() end )
-
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Arduino IDE para ESP8266</h2>
-					<img width="601" height="550" data-src="img/arduino.jpg">
-				</section>
-
-				<section>
-					<h2>Preparacion</h2>
-					<img width="541" height="550" data-src="img/arduino1.jpg">
-				</section>
-
-				<section>
-					<img width="541" height="550" data-src="img/arduino2.jpg">
-				</section>
-
-				<section>
-					<img width="541" height="550" data-src="img/arduino3.jpg">
-				</section>
-
-				<section>
-					<img width="541" height="550" data-src="img/arduino4.jpg">
-				</section>
-
-				<section>
-					<h2>GPI0 Map</h2>
-					<img width="641" height="550" data-src="img/esp12.svg">
-				</section>
-
-				<section>
-					<img width="441" height="550" data-src="img/mocha.jpg">
-				</section>
-
-				<section>
-					<h2>Codigo ejemplo en IDE de Arduino </h2>
-					<pre><code data-trim contenteditable>
-
-#include "ESP8266WiFi.h"
-
-void setup() {
-	Serial.begin(115200);
-
-		// Set WiFi to station mode and disconnect from an AP if it was previously connected
-		WiFi.mode(WIFI_STA);
-		WiFi.disconnect();
-		delay(100);
-
-		Serial.println("Setup done");
-		}
-
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Codigo ejemplo en IDE de Arduino </h2>
-					<pre><code data-trim contenteditable>
-
-void loop() {
-	Serial.println("scan start");
-
-// WiFi.scanNetworks will return the number of networks found
-	int n = WiFi.scanNetworks();
-	Serial.println("scan done");
-	if (n == 0)
-		Serial.println("no networks found");
-	else
-	{
-		Serial.print(n);
-		Serial.println(" networks found");
-		for (int i = 0; i < n; ++i)
-		{
-// Print SSID and RSSI for each network found
-		Serial.print(i + 1);
-		Serial.print(": ");
-		Serial.print(WiFi.SSID(i));
-		Serial.print(" (");
-		Serial.print(WiFi.RSSI(i));
-		Serial.print(")");
-		Serial.println((WiFi.encryptionType(i) == ENC_TYPE_NONE)?" ":"*");
-		delay(10);
-	}
-}
-Serial.println("");
-
-// Wait a bit before scanning again
-delay(5000);
-}
-
-					</code></pre>
-				</section>
-				<section style="text-align: left;">
-					<h1>Projectos</h1>
-					<img width="641" height="450" data-src="img/gatonegocio.jpg">
-				</section>
-				<section style="text-align: left;">
-					<h1>Netflix</h1>
-					<video width="820" height="440" controls>
-  <source src="img/Netflix.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>Conteo de personas</h1>
-					<video width="820" height="440" controls>
-  <source src="img/Solución.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>Uber</h1>
-					<video width="820" height="440" controls>
-	  <source src="img/uber.mp4" type="video/mp4">
-	  <source src="movie.ogg" type="video/ogg">
-	Your browser does not support the video tag.
-	</video>
-				</section>
-				<section style="text-align: left;">
-					<h1>Clima</h1>
-					<img width="641" height="450" data-src="img/weather_Weather_Station_GIF.gif">
-				</section>
-
-				<section style="text-align: left;">
-					<h1>DEMO</h1>
-					<img width="641" height="450" data-src="img/gatonegocio.jpg">
-				</section>
-
-				<section>
-					<img width="641" height="450" data-src="img/zouzouille.jpg">
-				</section>
-
-				<section>
-					<h2>The Inventor's House</h2>
-					<p> Hackerspace</p>
-					<p>Comunidad, impresion 3D, Electronica, Drones, programación...</p>
-					<img width="350" height="350" data-src="img/TIH.png">
-				</section>
-
-				<section>
-					<h2>The Inventor's House</h2>
-					<p>Estaño #227, La Fundición, atras del antiguo horno de fundición</p>
-					<p>Telefono 915-61-62</p>
-					<p>theinventorhouse.org</p>
-				</section>
-
-				<section>
-					<img width="350" height="250" data-src="img/Logomakerlab.png">
-					<p>I.C. José Ramón Bracamonte Barahona
-					Makerlab Ingeniería e Innovación S.A.P.I. de C.V.</p>
-					<p>
-						jrbracamonte@makerlab.mx
-						www.makerlab.mx
-						www.aquila.io
-						Celular: 9992358034 </p>
-				</section>
-
-				<section>
-					<img width="600" height="450" data-src="img/aquila.png">
+					<h2>Servo</h2>
+					<img width="341" height="250" data-src="img/learn_arduino_servos.png"><br>
+					<a href="https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors">Informacion Extra</a>
 				</section>
 
 				<section>
 					<h2>Bibliografia</h2>
 					<ul>
-						<li><a href="http://bbs.espressif.com/">Oficial ESP8266</a></li>
-						<li><a href="http://www.esp8266.com/">Comunidad ESP8266</a></li>
-						<li><a href="http://esp8266.ru/esplorer/">ESPlorer</a></li>
-						<li><a href="https://github.com/esp8266/esp8266-wiki/wiki">WikiESP8266</a></li>
-						<li><a href="http://blog.theinventorhouse.org">Tutoriales TIH ESP8266</a></li>
-						<li><a href="https://github.com/esp8266/Arduino">Arduino IDE for ESP8266</a></li>
+						<li><a href="https://www.arduino.cc/">Arduino Oficial</a></li>
+						<li><a href="instructables.com">Instructables.com</a></li>
+						<li><a href="hackaday.com">HackaDay</a></li>
+						<li><a href="blog.theinventorhouse.org">Blog The Inventor's House</a></li>
 					</ul>
 				</section>
 
@@ -667,7 +147,7 @@ Your browser does not support the video tag.
 				</section>
 
 				<section style="text-align: righ;">
-					<h1>EL FIN</h1>
+					<h2>Contacto</h2>
 					<p>
 						- <a href="#">Andres Sabas</a> <br>
 						- <a href="https://twitter.com/Sabasacustico">@sabasacustico</a> <br>
@@ -676,6 +156,9 @@ Your browser does not support the video tag.
 					</p>
 				</section>
 
+				<section style="text-align: righ;">
+					<h2>Iniciemos la practica</h2>
+				</section>
 			</div>
 
 		</div>
